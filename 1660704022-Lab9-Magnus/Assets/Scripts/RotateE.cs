@@ -4,7 +4,7 @@ public class RotateE : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField] private Vector3 angularV;
-    [SerializeField] private float torque = 10;
+    [SerializeField] private Vector3 torque;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class RotateE : MonoBehaviour
         }
         else if (Input.GetMouseButtonDown(1))
         {
-            rb.AddTorque(Vector3.up * torque, ForceMode.Impulse);
+            rb.AddTorque(torque);
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {

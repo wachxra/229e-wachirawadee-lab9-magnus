@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 694762828}
   - component: {fileID: 694762827}
   - component: {fileID: 694762826}
+  - component: {fileID: 694762831}
   m_Layer: 0
   m_Name: Football
   m_TagString: Untagged
@@ -467,12 +468,24 @@ Transform:
   m_GameObject: {fileID: 694762825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.18, y: 0.5, z: 3.66}
+  m_LocalPosition: {x: -15.45, y: 0.5, z: 3.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!75 &694762831
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694762825}
+  m_Enabled: 1
+  m_Force: {x: -100, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angularV: {x: 5, y: 10, z: 0}
+  torque: {x: 0, y: 0, z: 10}
 --- !u!54 &719258794
 Rigidbody:
   m_ObjectHideFlags: 0
