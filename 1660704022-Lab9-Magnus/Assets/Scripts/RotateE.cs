@@ -21,7 +21,7 @@ public class RotateE : MonoBehaviour
         {
             rb.AddTorque(torque);
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.S))
         {
             rb.angularVelocity = Vector3.zero;
         }
